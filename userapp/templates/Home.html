@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titles %}Home|SmartLibrary{% endblock %}
+{% block styles %}
+<style type="text/css">
+    h1{
+        color: rgb(174, 28, 28);
+    }
+    #img2{
+        height: 500px; width:1500px;
+    }
+    #img3{
+        height: 1000px; width: 600px;
+        position: absolute;
+        left: 55%;
+        margin-top: 400px;
+    }
+    body{
+        background-color: rgb(20, 1, 23); ;
+    }
+   
+
+</style>
+{% endblock %}
+{% block container %}
+<h1> SMART LIBRARY </h1>
+<img id="img2" src="{% static 'images/library1.avif' %}"><br><br><br><br>
+<img id="img3" src="{% static 'images/library1.avif' %}">
+<img id="img4" src="{% static 'images/03img.jpg' %}">
+<p>
+    a collection or set of books or recordings, all produced in the same style or about the same subject:
+    the Penguin Shakespeare Library
+     
+    a collection of songs or pieces of music on an online music service:
+    You can share your music library with other users.
+    The music streaming service is growing its library by tens of thousands of tracks per week.
+     Fewer examples
+    The library has three levels, with a conference centre at ground level.
+    This library loans books, CDs and videotapes.
+    Jill spent the past few months doing research in the library.
+    A date stamp inside the front cover of a library book shows when it should be returned.
+    The council has decided that the local public libraries will close on Mondays.
+     SMART Vocabulary: related words and phrases
+     More meanings of library
+     All
+    e-library
+    non-library
+    library code
+    mobile library
+    public library
+    tape library
+    lending library
+</p>
+
+
+{% endblock %}

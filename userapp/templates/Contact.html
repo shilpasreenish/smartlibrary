@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block titles %}Contact|SmartLibrary{% endblock %}
+{% block styles %}
+<style type="text/css">
+    h1{
+    color: rgb(174, 28, 28);
+    text-align: end;
+    margin: .5% 20%;
+}
+#cnt{
+    float: right;
+    margin-right: 200px;
+    width: 400px;
+}
+hr{
+    inline-size: 100%;
+    color: rgb(150, 127, 243); ;
+}
+#b1{
+    color: rgb(237, 235, 244);
+}
+input{
+    background-color: transparent;
+    color: rgb(159, 135, 194);
+    border: 0;
+}
+#s1{
+    background-image:linear-gradient(rgb(98, 24, 227),rgb(128, 70, 144)) ;
+    color: rgb(241, 242, 243);
+}
+
+
+</style>
+{% endblock %}
+{% block container %}
+<h1><b> CONTACT US </b></h1>
+
+<div id="cnt">
+<label>NAME     </label> <br>
+<input type="text" placeholder="Enter your Name" ><br>
+<hr>
+<label>Email    </label><br>
+<input type="text" placeholder="Enter a valid email address"><br>
+<hr>
+<texta>Message </texta><br><br><br><br>
+<hr>
+<br>
+<input type="checkbox" value="trueorfalse"><label>&nbsp;I accept the<b id="b1">Terms of Service</b></label><br><br><br>
+<input type="submit" value="SUBMIT" id="s1">
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titles %}Home|SmartLibrary{% endblock %}
+{% block styles %}
+<style type="text/css">
+    h1{
+        color: rgb(174, 28, 28);
+    }
+    body{
+        background-image: url("{% static 'images/lia.avif' %}");
+        background-repeat: no-repeat; background-size: 100% 500px;
+    }
+    #p2{
+       color:rgb(120, 41, 194);
+       margin-top: 600px;
+    }
+</style>
+{% endblock %}
+{% block container %}
+<h1> ABOUT US </h1>
+<p id="p2">Libraries play a vital role in providing people with reliable content.<br> They encourage and promote the process of learning and grasping knowledge. The book worms can get loads of books to read from and enhance their knowledge. Moreover,<br> the variety is so wide-ranging that one mostly gets what they are looking for.</p>
+{% endblock %}

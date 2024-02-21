@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titles %}Home|SmartLibrary{% endblock %}
+{% block styles %}
+<style type="text/css">
+    h1{
+        color: rgb(174, 28, 28);
+    }
+    .h5c{
+        color: white;
+    }
+    #cards{
+        background-color:rgba(48, 2, 101, 0.814);
+        float:left; 
+        margin: 30px;
+    }
+    #cards:hover{
+        background-color:rgba(75, 45, 110, 0.814);
+
+    
+    }
+</style>
+{% endblock %}
+{% block container %}
+<div class="container">
+<h1> BOOK LIST </h1><br><br><br>
+{% for a in data %}
+<div class="card" style="width: 18rem;" id="cards">
+    <img src="{{ a.picture.url }}" class="card-img-top" alt="image of book">
+    <div class="card-body">
+        <h4 class="card-title h5c">{{a.Name}}</h4>
+        <h6 class="h5c">{{a.author}}</h6>
+
+        <p class="card-text">{{a.Description}}</p>
+        <a href="EditPage/{{a.id}}" class="btn btn-success">EDIT</a>&nbsp; &nbsp; &nbsp;
+        <a href="Delete/{{a.id}}" class="btn btn-danger">DELETE</a>
+    </div>
+  </div>
+  
+  {% endfor %}
+
+  <br>
+  <br><br>
+  </div>
+{% endblock %}
